@@ -19,7 +19,7 @@ object ScalajsReact {
     val Nyaya         = "0.8.1"
     val ReactJs       = "16.5.1"
     val Scala211      = "2.11.12"
-    val Scala212      = "2.12.6"
+    val Scala212      = "2.12.7"
     val ScalaJsDom    = "0.9.6"
     val Scalaz72      = "7.2.26"
     val SizzleJs      = "2.3.0"
