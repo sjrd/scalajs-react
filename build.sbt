@@ -16,5 +16,5 @@ val test          = ScalajsReact.test
 val ghpagesMacros = ScalajsReact.ghpagesMacros
 val ghpages       = ScalajsReact.ghpages
 
-resolvers += "scala-integration" at "https://scala-ci.typesafe.com/artifactory/scala-integration/"
+resolvers in Global += "scala-integration" at "https://scala-ci.typesafe.com/artifactory/scala-integration/"
 

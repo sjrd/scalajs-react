@@ -49,7 +49,7 @@ object ScalajsReact {
         incOptions         := incOptions.value.withNameHashing(true).withLogRecompileOnMacro(false),
         triggeredMessage   := Watched.clearWhenTriggered,
         libraryDependencies := libraryDependencies.value.filterNot(_.name == "scalajs-compiler"),
-        addCompilerPlugin("org.scala-js" % "scalajs-compiler" % "0.6.25" cross CrossVersion.patch),
+        addCompilerPlugin("org.scala-js" % "scalajs-compiler_2.12.7" % "0.6.25"),
         resolvers += "pr" at "https://scala-ci.typesafe.com/artifactory/scala-pr-validation-snapshots/"
 )
 
@@ -175,7 +175,7 @@ object ScalajsReact {
         "org.scala-lang" % "scala-compiler" % scalaVersion.value % "provided"))
 
   def macroParadisePlugin =
-    compilerPlugin("org.scalamacros" % "paradise" % Ver.MacroParadise cross CrossVersion.patch)
+    compilerPlugin("org.scalamacros" % "paradise_2.12.7" % Ver.MacroParadise)
 
   def kindProjector =
     compilerPlugin("org.spire-math" %% "kind-projector" % Ver.KindProjector cross CrossVersion.binary)
