@@ -15,3 +15,6 @@ val test          = ScalajsReact.test
 //val testModule    = ScalajsReact.testModule // Too damn buggy
 val ghpagesMacros = ScalajsReact.ghpagesMacros
 val ghpages       = ScalajsReact.ghpages
+
+resolvers += "scala-integration" at "https://scala-ci.typesafe.com/artifactory/scala-integration/"
+
